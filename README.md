@@ -1,16 +1,16 @@
 # Trello CLI
 
-A command-line interface (CLI) program to add a card to a Trello board with labels and a comment.
+This CLI program allows you to add a card to a specified Trello board list with labels and a comment. It uses the Trello API to perform the operations.
 
 ## Prerequisites
 
 - Python 3.x
-- `requests` library
+- `requests` library (`pip install requests`)
+- Trello API key and token
 
-## Installation
+## Usage
 
-1. Clone the repository:
-   ```bash
-   git clone <repository_url>
-   cd trello-cli
+### Example CLI Command
 
+```bash
+python trello_cli.py --api_key YOUR_API_KEY --token YOUR_TOKEN --board_name "Board Name" --list_name "List Name" --card_name "Card Name" --labels "Label1,Label2" --comment "This is a comment"
